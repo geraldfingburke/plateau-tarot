@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Plateau Tarot</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<!--  Luciella Elisabeth Scarlett is the real mvp (Tarot Card Edits)-->
+
+<body>
+
+	<div class="header">
+		<h1 class="box-text">Plateau Tarot</h1>
+		<p class="box-text">Destiny has brought you here.</p>
+	</div>
+
+	<div id="menu">
+    <div class="image-box">
+		  <h2 class="box-text">A Virtual Fortune Teller.</h2>
+    </div>
+    
+    <div class="row">
+      <div class="column left"></div>
+      <div class = "column middle">
+		
+      <p>The Tarot is an ancient art that can help you find your way in life. This virtual fortune teller will read your fortune, but it's up to you to complete the reading.</p>
+      <p>The Tarot works best if you ask a specific question and focus on it before you begin.</p>
+			<p>The magic in the cards will channel energy from the psychic realm to divine your fate, and answer your questions.</p>
+      <p>What type of reading would you like?</p>
+			<button onClick="selectSpread('single')">Single Card</button>
+      <p></p>
+			<button onClick="selectSpread('3 card')">3 Card Spread</button>
+      <p></p>
+      <button onClick="selectSpread('star')">Star Spread</button>
+      <p></p>
+      <!-- We can hold off until we have this working <button onClick="selectSpread('decision')">Decision Spread</button>-->
+ 
+    <p>Image credits go to Luciella Elisabeth Scarlett. You can download them on <a href="https://luciellaes.itch.io/rider-waite-smith-tarot-cards-cc0" target = "blank">Itch.io.</a></p>
+    </div>
+    <div class = "column right"></div>
+    </div>
+
+	</div><!-- End of Choice div -->
+
+  <br></br>
+  <div id="single-card">
+    <div class="image-box">
+    	<h2 class="box-text">The Single Card Reading</h2>
+    </div>
+    <div class="row">
+      <div class = "column left"></div>
+      <div class = "column middle">
+               
+        <p><a href="">Choose a different reading...</a></p>
+        <p>This basic reading will suit any occasion.</p>
+        <p></p>
+		    <button onClick="drawACard()">Start</button>
+			  <p id="meaning text"></p>
+        	<div class="card-back">
+						<p id="card"></p>
+          </div>
+      </div>
+      <div class = "column right"></div>
+    </div>
+
+  </div> <!-- End of the Single Card -->
+  <br></br>
+	<div id="3-card-spread">
+	  <div class="image-box">
+      <h2 class="box-text">The 3 Card Spread</h2>
+    </div>
+      <p><a href="">Choose a different reading...</a></p>
+      <p>A reading for pondering deeper issues.</p>
+      <p></p>
+		  <button onClick="drawACard()">Start</button>
+			<p id="meaning text"></p>
+  
+  <br></br>
+		<div class="row">
+			<div class="column left"></div>
+			<div class="column middle">
+				<div class="row">
+						<h3>The Past</h3>
+						<div class="card-back">
+							<p id="card"></p>
+						</div>
+					</div>
+					<div class="row">
+               <div class="column".
+						<h3>The Present</h3>
+						<div class="card-back">
+							<p id="card"></p>
+              </div>
+						</div>
+				</div>
+				<div class="column">
+					<h3>The Future</h3>
+					<div class="card-back">
+						<p id="card"></p>
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="column right"></div>
+    </div>
+
+  </div><!-- End of 3 Card Spread -->
+  <br></br>
+	<div id="star-spread">
+    <div class="image-box">
+      <h2 class="box-text">The Star Spread</h2>
+    </div>
+    <p><a href="">Choose a different reading...</a></p>
+    <p>Examine a situation indepthly, letting the stars guide you.</p>
+    <p></p>
+	  <button onClick="drawACard()">Start</button>
+		<p id="meaning text"></p>
+
+    <div class="row">
+      <div class = "column">
+        <h3>The Situation</h3>
+				<div class="card-back">
+					<p id="card"></p>
+					</div>
+      </div>
+      <div class = "column">
+        <h3>The Past</h3>
+				<div class="card-back">
+					<p id="card"></p>
+				</div>
+      </div>
+      <div class = "column">
+        <h3>The Future</h3>
+				<div class="card-back">
+					<p id="card"></p>
+				</div>
+      </div>
+      <div class = "column">
+     	  <h3>The Root</h3>
+			  <div class="card-back">
+				  <p id="card"></p>
+			  </div>
+      </div>
+      <div class = "column">
+        <h3>The Crown</h3>
+				<div class="card-back">
+					<p id="card"></p>
+				</div>
+      </div>
+    </div><!-- End Row -->
+  
+  </div><!-- End of Star Spread -->
+  <br></br>
+  <div class="image-box bottom">
+    <h2 class="box-text">Relax and enjoy the magic of the Tarot.</h2>
+  </div>  
+  <script src="js/main.js"></script>
+  </body>
+</html>

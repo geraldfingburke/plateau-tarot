@@ -1,0 +1,136 @@
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#fff7d6;
+  text-align: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 100px;
+}
+
+.card-back {
+  width: 150px;
+  height: 264px;
+  background-image: url("https://indiealchemy.com/plateautarot/api/images/Card Back.jpg");
+  background-size: 150px 264px;
+}
+
+.column-middle {
+  text-align: center;
+  align-items: center;
+}
+
+.image-box{
+  padding: 10px;
+  font-size: 30px;
+  background-image: url("https://images.unsplash.com/photo-1600429991827-5224817554f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  border: 5px solid #990000;
+}
+
+.card-empty{
+  width: 150px;
+  height: 264px;
+}
+
+hr{
+  margin-top: 150px;
+}
+
+.row{
+  min-height: 400px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.header{
+  padding: 10px;
+  text-align: center;
+  background-image:url("https://images.unsplash.com/photo-1600430086946-2d9fc61bbefc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border: 5px solid #990000;
+}
+
+.middle {
+  min-width: 60%;
+}
+
+.center{
+ text-align: center;
+ padding: 50px;
+}
+
+#card {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 20%
+}
+
+h3{
+  text-align: center;
+  color: darkgreen;
+}
+
+/*Clear floats after the columns. */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-back:hover {background-color: aquamarine;}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #990000;
+  color: #FFF; 
+  font-size: 24px; 
+  line-height: 24px; 
+  padding: 6px; 
+  border: none;
+  font-family: Georgia, serif; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  display: inline-block;
+}
+
+.box-text {
+  background-color:#fff7d6;
+  color: black;
+  border: solid 5px #990000;
+  padding: 10px;
+  max-width: 33%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+button:hover {background: #770000; }
+
+button:active {background: #550000; }
+
