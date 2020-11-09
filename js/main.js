@@ -13,6 +13,7 @@ function draw() {
 // Every display besides the desired spread is deactivated
 // The cards animate to their positions
 
+
 $(document).ready(function() {
   $("#3-card-spread").hide();
   $("#star-spread").hide();
